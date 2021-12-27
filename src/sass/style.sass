@@ -9,7 +9,7 @@ body
     +reg
 
 img
-    max-width: 100%
+    max-width: 95%
 
 .container
     max-width: 1170px
@@ -37,6 +37,12 @@ img
     padding: 25px
     border-radius: 10px
 
+.section-title
+    font-size: 30px 
+    +bold
+    text-align: center
+    line-height: 45px
+    
 
 .header
     padding: 20px 0
@@ -202,6 +208,31 @@ img
         text-decoration: none
         +bold
         color: $accent
+
+.portfolio
+    padding: 100px 0
+    background: $grey url('../img/portfolio-bg.png') left repeat-y
+    background-size: 50%
+    &__title
+        margin-bottom: 100px
+        color: $accent
+    &__arrows
+        max-width: 120px
+        display: flex
+        margin: auto
+
+
+.arrows__left, .arrows__right
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    margin: auto
+    margin-top: 70px
+
+.slider__image
+    margin: auto
+
+
 .modal
     position: absolute
     left: 0

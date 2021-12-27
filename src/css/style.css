@@ -25,7 +25,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .container {
@@ -58,6 +58,14 @@ img {
   border: 1px solid #dddddd;
   padding: 25px;
   border-radius: 10px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
 }
 
 .header {
@@ -368,6 +376,41 @@ img {
   font-family: 'Museo Sans Bold';
   font-weight: 700;
   color: #333;
+}
+
+.portfolio {
+  padding: 100px 0;
+  background: #f5f5f5 url("../img/portfolio-bg.png") left repeat-y;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  margin-bottom: 100px;
+  color: #333;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.arrows__left, .arrows__right {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.slider__image {
+  margin: auto;
 }
 
 .modal {
