@@ -15,6 +15,11 @@
 
 
 $(document).ready(function(){
+
+
+    // napojení knihovny wow.js
+    new WOW().init();
+
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
@@ -27,6 +32,8 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
 
+
+    //napojení slideru.js
     $('.slider').slick({
         slidesToShow: 3,
         prevArrow: $('.arrows__left'),

@@ -7,16 +7,17 @@
     <title>Housefix</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-block">
-                <div class="header__logo">
+                <div class="header__logo wow animate__animated animate__fadeInDownBig">
                     <img src="img/Logo@1X.png" alt="logo">                    
                 </div>
-                <div class="header__info">
+                <div class="header__info wow animate__animated animate__fadeInDownBig">
                     <div class="header__contacts">
                         <span class="header__address">Praha</span>
                         <a href="#" class="header__phone">+420 777 666 333</a>
@@ -57,7 +58,7 @@
                             
                         </ul>
                     </div>
-                    <div class="main-image">
+                    <div class="main-image wow animate__animated animate__fadeInRightBig">
                         <img src="img/main-img.png" alt="rozpoložení bytu">
                     </div>
                 </div>
@@ -109,6 +110,74 @@
 
             </div>
         </section>
+
+        <section class="price">
+            <div class="container">
+                <h2 class="section-title price__title">Máme velmi flexibilní systém slev <br> pro komplexní práce!</h2>
+                <span class="section-subtitle price__subtitle">Ceny za naše služby</span>
+                <div class="cards">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                        <div class="card__image">
+                            <img src="../src/img/price5.jpeg" alt="obrazek">
+                        </div>
+                        <div class="card__text">
+                            <h4 class="card__title">Rekonstrukce koupelen a toalet</h4>
+                            <a href="#" class="card__link">Zjistit ceny</a>
+                        </div>
+                    </div>
+
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                        <div class="card__image">
+                            <img src="../src/img/price5.jpeg" alt="obrazek">
+                        </div>
+                        <div class="card__text">
+                            <h4 class="card__title">Rekonstrukce pokojů a apartmánů</h4>
+                            <a href="#" class="card__link">Zjistit ceny</a>
+                        </div>
+                    </div>
+
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                        <div class="card__image">
+                            <img src="../src/img/price5.jpeg" alt="obrazek">
+                        </div>
+                        <div class="card__text">
+                            <h4 class="card__title">Výzdoba kancelářských prostorů</h4>
+                            <a href="#" class="card__link">Zjistit ceny</a>
+                        </div>
+                    </div>
+
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                        <div class="card__image">
+                            <img src="../src/img/price5.jpeg" alt="obrazek">
+                        </div>
+                        <div class="card__text">
+                            <h4 class="card__title">Rekonstrukce v nových budovách</h4>
+                            <a href="#" class="card__link">Zjistit ceny</a>
+                        </div>
+                    </div>
+
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                        <div class="card__image">
+                            <img src="../src/img/price5.jpeg" alt="obrazek">
+                        </div>
+                        <div class="card__text">
+                            <h4 class="card__title">Renovace kuchyní</h4>
+                            <a href="#" class="card__link">Zjistit ceny</a>
+                        </div>
+                    </div>
+
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                        <div class="card__image">
+                            <img src="../src/img/price5.jpeg" alt="obrazek">
+                        </div>
+                        <div class="card__text">
+                            <h4 class="card__title">Opravy chat a chalup</h4>
+                            <a href="#" class="card__link">Zjistit ceny</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
     </main>
 
     <div class="modal" id="modal">
@@ -120,6 +189,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
