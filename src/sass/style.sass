@@ -252,6 +252,8 @@ img
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    @media (max-width: 815px)
+        justify-content: center
     
 
 .card
@@ -305,7 +307,87 @@ img
             height: 3px
             background-color: $buttons
             transition: .2s
+.steps
+    padding-bottom: 120px
+    &__title
+        margin-bottom: 40px
+    &__subtitle
+        margin-bottom: 75px
+    
+.icons
+    display: flex
+    justify-content: space-between
+    @media ( max-width: 955px )
+        margin: auto
+        flex-wrap: wrap
+        width: 50%
+    @media ( max-width: 680px )
+        justify-content: center
+        
+    
+        
 
+.icon
+    text-align: center
+    position: relative
+    &:last-child
+        &::after
+            display: none
+
+    &::after
+        content: ''
+        position: absolute
+        display: block
+        top: -10px
+        right: -95px
+        width: 72px
+        height: 25px
+        background-image: url('../img/itemArrow.png')
+        @media ( max-width: 1150px )
+            display: none
+    &__text
+        @media ( max-width: 960px )
+            margin-bottom: 30px
+                    
+        
+    &__image
+        width: 100px
+        height: 100px
+        margin: auto
+        border: 3px solid $buttons
+        background-color: #fff
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 30px
+        img
+            width: 30px
+            height: 30px
+            display: inline-block
+            
+    &__text
+        max-width: 140px
+        display: inline-block
+        text-align: center
+        font-size: 14px
+        @media ( max-width: 680px )
+             max-width: 160px
+
+.notice
+    background-color: $second
+    padding: 100px 0
+    &__text
+        text-align: center
+        font-size: 32px
+        max-width: 750px
+        margin: auto
+        line-height: 50px
+        font-weight: 300
+        @media ( max-width: 750px )
+            font-size: 20px
+            max-width: 550px
+            line-height: 30px
 
 
 
