@@ -235,6 +235,7 @@ img
     margin-top: 70px
 
 .slider__image
+    max-width: 96%
     margin: auto
 
 .price
@@ -388,6 +389,67 @@ img
             font-size: 20px
             max-width: 550px
             line-height: 30px
+
+.info
+    padding: 100px 0
+    &__block
+        margin-bottom: 150px
+
+
+.benefits
+    display: flex
+    justify-content: space-between
+    @media ( max-width: 1185px )
+        flex-wrap: wrap
+        margin: auto
+    @media ( max-width: 785px )
+        justify-content: center
+        
+
+
+
+.benefit
+    background-color: $benefit-bg
+    height: 410px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 370px
+    position: relative
+    @media ( max-width: 1185px )
+        margin-bottom: 30px
+        
+
+    
+    &__image
+        position: absolute
+        bottom: 0
+        left: 0
+    &__text
+        margin: 26px 50px 0 26px
+        font-size: 16px
+        line-height: 23px
+        strong
+            +bold
+
+.documents__title
+    margin-bottom: 100px
+
+.documents-block
+    display: flex
+    justify-content: space-between
+    @media ( max-width: 880px )
+        flex-wrap: wrap
+    @media ( max-width: 620px )
+        justify-content: center
+
+    &__text 
+        text-align: center
+        margin-top: 40px
+        line-height: 24px
+        font-size: 18px
+        @media ( max-width: 880px )
+            margin-bottom: 45px
 
 
 

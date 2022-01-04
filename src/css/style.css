@@ -417,6 +417,7 @@ img {
 }
 
 .slider__image {
+  max-width: 96%;
   margin: auto;
 }
 
@@ -658,6 +659,120 @@ img {
     font-size: 20px;
     max-width: 550px;
     line-height: 30px;
+  }
+}
+
+.info {
+  padding: 100px 0;
+}
+
+.info__block {
+  margin-bottom: 150px;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1185px) {
+  .benefits {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+@media (max-width: 785px) {
+  .benefits {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.benefit {
+  background-color: #f7f7f7;
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 370px;
+  position: relative;
+}
+
+@media (max-width: 1185px) {
+  .benefit {
+    margin-bottom: 30px;
+  }
+}
+
+.benefit__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.benefit__text {
+  margin: 26px 50px 0 26px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.benefit__text strong {
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.documents__title {
+  margin-bottom: 100px;
+}
+
+.documents-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 880px) {
+  .documents-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .documents-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.documents-block__text {
+  text-align: center;
+  margin-top: 40px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+@media (max-width: 880px) {
+  .documents-block__text {
+    margin-bottom: 45px;
   }
 }
 
