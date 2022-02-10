@@ -33,6 +33,26 @@ $(document).ready(function(){
     });
 
 
+    // Validace formulářů
+    $('#brief-form').validate({
+        rules: {
+            username: "required",
+            phone: "required", 
+            email: {
+                required: true,
+                email: true,
+                phone: true
+            }
+        },
+
+        messages:{
+            username: "vaše jméno",
+            phone: "telefon",
+            email: "váš email"
+        }
+
+    });
+
     //napojení slideru.js
     $('.slider').slick({
         slidesToShow: 3,
